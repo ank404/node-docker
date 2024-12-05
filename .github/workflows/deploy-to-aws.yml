@@ -43,7 +43,7 @@ jobs:
 
           # Run the new container
         docker run -d -p 3000:3000 \
-        -e SECRET_MESSAGE="${{ secrets.SECRET_MESSAGE }}" \
-        -e USERNAME="${{ secrets.USERNAME }}" \
-        -e PASSWORD="${{ secrets.PASSWORD }}" \
-        --name nodejs-service ${{ secrets.DOCKER_USERNAME }}/node-app
+          -e SECRET_MESSAGE="${{ secrets.SECRET_MESSAGE }}" \
+          -e USERNAME="${{ secrets.USERNAME }}" \
+          -e PASSWORD="${{ secrets.PASSWORD }}" \
+          --name nodejs-service ${{ secrets.DOCKER_USERNAME }}/node-app
